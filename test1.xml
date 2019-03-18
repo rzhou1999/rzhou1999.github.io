@@ -1,0 +1,9 @@
+<logisim-evolution>
+<untracked_file>
+http://www.cs.cornell.edu/courses/cs3410/2019sp/logisim/logisim-evolution.jar
+</untracked_file>
+<untracked_version>2.14.7.10</untracked_version>
+<changelog>
+<changelogtext>Issues with Jump and Branching immediates fixed. JAL and branch immediates can now be 13 bits word aligned numbers.</changelogtext>
+</changelog>
+</logisim-evolution>
