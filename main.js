@@ -16,7 +16,7 @@ function showProjects() {
         <p class="tab-desc">Visualizer for MyAnimeList userrecs.<br><br>Front end written in JavaScript using vis.js for visualization. Back end written in Python with Flask, Connexion and BeautifulSoup.</p>
       </div>
 
-      <div class="project-tab project-logisim" onclick="window.open('https://github.com/rzhou1999/logisim-evolution');typeNormal('cat web/index.html<br>','~/projects');">
+      <div class="project-tab project-logisim" onclick="window.open('https://github.com/rzhou1999/logisim-evolution');typeNormal('ls comparch/logisim-evolution<br>','~/projects');">
         <h1 class="tab-title">Feature development for Logisim Evolution</h1>
         <p class="tab-desc">Development on Logisim Evolution, Cornell CS3410's fork of the digital logic simulator Logisim. Features include a batch attribute change option for Logisim components and a more comprehensive changelog feature using Swing. Written in Java.</p>
       </div>
