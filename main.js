@@ -86,7 +86,7 @@ function showEmail(){
   state = !state;
   if (state){
     document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at gmail dot com</p>";
-    typeNormal('cat super-seret-email.txt<br>','~/links');
+    typeNormal('cat super-secret-email.txt<br>','~/links');
   }
   else{
     document.getElementById("email").innerHTML = "";
