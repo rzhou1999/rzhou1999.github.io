@@ -10,15 +10,42 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/song940/multiline.js/master/multiline.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script type="text/javascript" src="main.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 <div class="wrapper">
   <div class="me fade">
-    <img src="https://i.imgur.com/Eb2dwRP.png" id="myface">
-    <h1>Hi there! My name is Randy.</h1>
-    <p>I'm a sophomore majoring in Computer Science at Cornell University.</p>
+    <div class="header">
+      <img src="https://i.imgur.com/Eb2dwRP.png" id="myface">
+
+      <div class="terminal">
+        <div class="top">
+          <div class="buttons">
+            <div class = "red button"></div>
+            <div class = "yellow button"></div>
+            <div class = "green button"></div>
+          </div>
+          <p class = "monospace" id = "terminal-title">guest@randyzhou.com</p>
+        </div>
+        <div class="terminal-content">
+          <p class = "monospace"  id="terminal-text-saved"></p>
+          <p class = "monospace"  id="terminal-text">
+
+          </p>
+          <script>
+            var options = {
+              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^250 `guest@randyzhou:~$ `"],
+              typeSpeed: 15
+            }
+            typed = new Typed("#terminal-text", options);
+          </script>
+        </div>
+      </div>
+
+    </div>
   </div>
   <hr class="fade">
   <div class="other fade">
