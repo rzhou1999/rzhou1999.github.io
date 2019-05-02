@@ -3,6 +3,7 @@ var typed = undefined;
 function showProjects() {
     typeNormal("cd ~/projects<br>","~/projects");
     document.getElementById("content").innerHTML = multiline(function(){/*
+
       <h1 class="title">Projects</h1>
 
       <div class="project-tab project-thiswebsite" onclick="window.open('https://github.com/rzhou1999/rzhou1999.github.io');typeNormal('cat web/index.html<br>','~/projects');">
@@ -13,6 +14,11 @@ function showProjects() {
       <div class="project-tab project-malrecgraph" onclick="window.open('http://randyzhou.com/MALRecGraph/');typeNormal('cat web/MALRecGraph.html<br>','~/projects');">
         <h1 class="tab-title">MALRecGraph</h1>
         <p class="tab-desc">Visualizer for MyAnimeList userrecs.<br><br>Front end written in JavaScript using vis.js for visualization. Back end written in Python with Flask, Connexion and BeautifulSoup.</p>
+      </div>
+
+      <div class="project-tab project-logisim" onclick="window.open('https://github.com/rzhou1999/logisim-evolution');typeNormal('cat web/index.html<br>','~/projects');">
+        <h1 class="tab-title">Feature development for Logisim Evolution</h1>
+        <p class="tab-desc">Development on Logisim Evolution, Cornell CS3410's fork of the digital logic simulator Logisim. Features include a batch attribute change option for Logisim components and a more comprehensive changelog feature using Swing. Written in Java.</p>
       </div>
 
       <div class="project-tab project-stockmarketproject" onclick="window.open('https://github.com/rzhou1999/Stock-Market-Project');typeNormal('ls python/Stock_Market_Project<br>','~/projects');">
@@ -117,4 +123,11 @@ function typeNormal(inp, newDir){
   };
   typed.destroy();
   typed = new Typed("#terminal-text", options);
+}
+
+function squelchface(){
+  document.getElementById("content").innerHTML = '<img src="https://i.imgur.com/Eb2dwRP.png" id ="squelch">';
+  document.getElementById("squelch").width = 150+500* Math.random();
+  document.getElementById("squelch").height = 150+500* Math.random();
+  typeNormal("yes that is my face<br> ","~");
 }
