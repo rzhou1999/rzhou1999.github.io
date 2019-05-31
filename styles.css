@@ -28,7 +28,7 @@
 .monospace{
   font-family: Monaco, Consolas, 'Courier New', Courier;
   color: black;
-  font-size: 15px;
+  font-size: 14.5px;
   margin:0px;
   margin-left:1%;
 }
@@ -103,10 +103,10 @@ margin-block-end: .25em;
 }
 
 .fade{
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
 }
 @keyframes fadein {
     from {

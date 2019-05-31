@@ -37,8 +37,9 @@
           </p>
           <script>
             var options = {
-              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^250 `guest@randyzhou:~$ `"],
-              typeSpeed: 15
+              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^250 `guest@randyzhou:~$ ` ^125"],
+              typeSpeed: 15,
+              onStringTyped: function(self) {loadNav();},
             }
             typed = new Typed("#terminal-text", options);
           </script>
@@ -47,14 +48,7 @@
 
     </div>
   </div>
-  <hr class="fade">
-  <div class="other fade">
-    <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
-    <div class="el" id="about" onclick="showAbout()"><h3>About</h3></div>
-    <div class="el" id="links" onclick="showLinks()"><h3>Links</h3></div>
-  </div>
-  <hr class="fade">
-  <div class="fade" id="content">
+  <div id="masterContent">
   </div>
 </div>
 </body>
