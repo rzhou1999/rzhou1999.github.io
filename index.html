@@ -19,9 +19,9 @@
 <div class="wrapper">
   <div class="me fade">
     <div class="header">
-      <img src="https://i.imgur.com/Eb2dwRP.png" id="myface" onclick="squelchface();">
+      <div id="faceContent"></div>
 
-      <div class="terminal">
+      <div id="terminal">
         <div class="top">
           <div class="buttons">
             <div class = "red button"></div>
@@ -37,7 +37,7 @@
           </p>
           <script>
             var options = {
-              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^250 `guest@randyzhou:~$ ` ^125"],
+              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^500 `guest@randyzhou:~$ ` "],
               typeSpeed: 15,
               onStringTyped: function(self) {loadNav();},
             }

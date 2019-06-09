@@ -1,8 +1,11 @@
 var typed = undefined;
 var prevDir = "guest@randyzhou:~$ ";
 
-
 function loadNav(){
+  document.getElementById("faceContent").outerHTML = multiline(function(){/*
+          <div id="facewrapper"><img src="https://i.imgur.com/Eb2dwRP.png" id="myface" onclick="squelchface();"></div>
+          */});
+
   document.getElementById("masterContent").outerHTML = multiline(function(){/*  <hr class="fade">
     <div class="other fade">
       <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
