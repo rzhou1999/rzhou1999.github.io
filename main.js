@@ -121,7 +121,5 @@ function typeNormal(inp, newDir, cb){
 
 function squelchface(){
   document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/LDU_Txk06tM?start=75&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>';
-  document.getElementById("squelch").width = 150+500* Math.random();
-  document.getElementById("squelch").height = 150+500* Math.random();
   typeNormal("yes that is my face ","~",(function(){return;}));
 }
