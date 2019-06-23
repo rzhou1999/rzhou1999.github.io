@@ -1,7 +1,17 @@
 <html>
 <head>
-<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128235997-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128235997-2');
+</script>
+
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css?family=Aleo|Roboto" rel="stylesheet">
@@ -10,8 +20,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/song940/multiline.js/master/multiline.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="typer.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -36,12 +46,11 @@
 
           </p>
           <script>
-            var options = {
-              strings: ["","ssh guest@randyzhou.com<br> ^500 `Connected! Welcome to randyzhou.com!<br>` ^500 `guest@randyzhou:~$ ` "],
-              typeSpeed: 15,
-              onStringTyped: function(self) {loadNav();},
-            }
-            typed = new Typed("#terminal-text", options);
+            var typer = new Typer("terminal-text","terminal-text-saved",20, "^C", 10);
+            //callback hell, may or may not rewrite in the future...
+            var temp1 = ()=>{typer.dump("Connected! Welcome to randyzhou.com!<br>", 600, temp2)}
+            var temp2 = ()=>{typer.dump("guest@randyzhou:~$ ", 600, loadNav)}
+            typer.type("ssh guest@randyzhou.com", "", temp1);
           </script>
         </div>
       </div>
