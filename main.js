@@ -64,13 +64,17 @@ function showAbout() {
         but I often make forays into higher level programming and front-end development as well (this website is the result of one of them!).
         Some of my favorite classes/topics so far have been CS 3410 Computer System Organization and Programming, CS 4410 Operating Systems, and CS 4420 Computer Architecture.
         <br><br>
-        I graduated from Commonwealth High School of Boston in 2017. I am currently a second year university student majoring in CS and minoring in China and Asia Pacific Studies.
+        I graduated from Commonwealth High School of Boston in 2017. I am currently a second year university student majoring in CS and minoring in China and Asia Pacific Studies (assuming Cornell ever offers a gateway course ever again).
         <br><br>
-        In September 2018, I joined the Cornell Hyperloop project team as a member of the electrical software subteam. As of Spring 2019, I will also be a
-        teaching assistant for Cornell's CS 3410 Computer System Organization and Programming course.
+        For the 2018-2019 school year, I was part of the Cornell Hyperloop project team as a member of the electrical software subteam. While I was on the team, I primarily worked with sensors for the pod's safety mechanisms (C), writing GUIs for sensor data (Python), and researching possible communications systems between our pod's microcontrollers and the base station.
+        <br><br>
+        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting/rewriting major grading scripts for some of the largest/most complex projects in the course (includng P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
+        <br><br>
+        For the 2019 summer, I am interning in software development at <a href ="https://www.linkedin.com/company/pearson-k-12-learning/">Pearson K-12 Learning</a>.
         <br><br>
         When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing. I sing bass, and am currently a member of the Cornell Chorale.
       </p>
+
       */});
     })
   );
