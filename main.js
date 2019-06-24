@@ -68,7 +68,7 @@ function showAbout() {
         <br><br>
         For the 2018-2019 school year, I was part of the Cornell Hyperloop project team as a member of the electrical software subteam. While I was on the team, I primarily worked with sensors for the pod's safety mechanisms (C), writing GUIs for sensor data (Python), and researching possible communications systems between our pod's microcontrollers and the base station.
         <br><br>
-        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting/rewriting major grading scripts for some of the largest/most complex projects in the course (includng P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
+        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting/rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
         <br><br>
         For the 2019 summer, I am interning in software development at <a href ="https://www.linkedin.com/company/pearson-k-12-learning/">Pearson K-12 Learning</a>.
         <br><br>
