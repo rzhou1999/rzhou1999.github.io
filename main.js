@@ -6,15 +6,23 @@ function loadNav(){
           <div id="facewrapper"><img src="images/headshot.png" id="myface" onclick="squelchface();"></div>
           */});
 
-  document.getElementById("masterContent").outerHTML = multiline(function(){/*  <hr class="fade">
+  document.getElementById("masterContent").outerHTML = multiline(function(){/*  <hr class="bar fade">
     <div class="other fade">
       <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
       <div class="el" id="about" onclick="showAbout()"><h3>About</h3></div>
       <div class="el" id="links" onclick="showLinks()"><h3>Links</h3></div>
     </div>
-    <hr class="fade">
+    <hr class="bar fade">
     <div class="fade" id="content">
     </div>*/});
+
+    document.getElementById("footer").outerHTML = multiline(function(){/*
+      <div class="footer fade">
+        <div class="footerbar"></div>
+        Built from scratch, just as it should be.<br>
+        Randy Zhou 2019
+      </div>
+      */});
 }
 
 
@@ -27,7 +35,7 @@ function showProjects() {
 
           <div class="project-tab project-thiswebsite" onclick="typeNormal('cat web/index.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/rzhou1999.github.io');}));">
             <h1 class="tab-title">This Website</h1>
-            <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built from scratch using HTML, CSS and a touch of JavaScript.</p>
+            <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built 100% from scratch using HTML, CSS and (almost all) native JavaScript. Just as it should be.</p>
           </div>
 
           <div class="project-tab project-malrecgraph" onclick="typeNormal('cat web/MALRecGraph.html','~/projects',(()=>{window.open('http://randyzhou.com/MALRecGraph/');}));">
@@ -38,6 +46,11 @@ function showProjects() {
           <div class="project-tab project-logisim" onclick="typeNormal('ls comparch/logisim-evolution','~/projects',(()=>{window.open('https://github.com/rzhou1999/logisim-evolution');}));">
             <h1 class="tab-title">Feature development for Logisim Evolution</h1>
             <p class="tab-desc">Development on Logisim Evolution, Cornell CS3410's fork of the digital logic simulator Logisim. Features include a batch attribute change option for Logisim components and a more comprehensive changelog feature using Swing. Written in Java.</p>
+          </div>
+
+          <div class="project-tab project-terminaltyper" onclick="typeNormal('ls web/terminaltyper','~/projects',(()=>{window.open('https://github.com/rzhou1999/terminaltyper');}));">
+            <h1 class="tab-title">terminaltyper</h1>
+            <p class="tab-desc">A lightweight, fast and easy-to-use typer for simulating terminals in native js, used to power this very page. Written in a single codepen session (so please excuse the mess).</p>
           </div>
 
           <div class="project-tab project-stockmarketproject" onclick="typeNormal('ls python/Stock_Market_Project','~/projects',(()=>{window.open('https://github.com/rzhou1999/Stock-Market-Project');}));">
@@ -70,7 +83,7 @@ function showAbout() {
         <br><br>
         In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting/rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
         <br><br>
-        For the 2019 summer, I am interning in software development at <a href ="https://www.linkedin.com/company/pearson-k-12-learning/">Pearson K-12 Learning</a>.
+        For the 2019 summer, I am interning in software development at Pearson K-12 Learning.
         <br><br>
         When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing. I sing bass, and am currently a member of the Cornell Chorale.
       </p>
@@ -124,6 +137,6 @@ function typeNormal(inp, newDir, cb){
 }
 
 function squelchface(){
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/LDU_Txk06tM?start=75&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>';
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/SHvhps47Lmc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>'
   typeNormal("yes that is my face ","~",(function(){return;}));
 }

@@ -1,6 +1,7 @@
 .wrapper {
   width:42rem;
   margin:auto;
+  flex:1;
 }
 
 .header {
@@ -8,6 +9,30 @@
   height:200px;
   display: flex;
   box-shadow: 0 -14px 15px 30px white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 25px);
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Aleo', serif;
+  font-size: 14px;
+  color: silver;
+  margin:auto;
+  padding-bottom:5px;
+  padding-top:5px;
+  line-height: 1.3em;
+}
+
+.footerbar {
+  width:12em;
+  margin:auto;
+  border-top: 1px solid lightgray;
+  margin-bottom:7.5px;
 }
 
 #terminal {
@@ -65,7 +90,7 @@
   background-color: white;
 }
 
-hr {
+.bar {
        display: block;
        position: relative;
        padding: 0;
@@ -274,6 +299,10 @@ margin-block-end: .5em;
 
 .project-logisim{
     background-image:linear-gradient(to left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%), url("images/logisim.png");
+}
+
+.project-terminaltyper{
+    background-image:linear-gradient(to left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%), url("images/terminaltyper.png");
 }
 
 .tab-title{
