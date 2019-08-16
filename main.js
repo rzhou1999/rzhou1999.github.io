@@ -2,11 +2,11 @@ var typed = undefined;
 var prevDir = "guest@randyzhou:~$ ";
 
 function loadNav(){
-  document.getElementById("faceContent").outerHTML = multiline(function(){/*
-          <div id="facewrapper"><img src="images/headshot.png" id="myface" onclick="squelchface();"></div>
-          */});
+  document.getElementById("faceContent").outerHTML = 
+    `<div id="facewrapper"><img src="images/headshot.png" id="myface" onclick="squelchface();"></div>`;
 
-  document.getElementById("masterContent").outerHTML = multiline(function(){/*  <hr class="bar fade">
+  document.getElementById("masterContent").outerHTML =
+    `<hr class="bar fade">
     <div class="other fade">
       <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
       <div class="el" id="about" onclick="showAbout()"><h3>About</h3></div>
@@ -14,24 +14,22 @@ function loadNav(){
     </div>
     <hr class="bar fade">
     <div class="fade" id="content">
-    </div>*/});
+    </div>`;
 
-    document.getElementById("footer").outerHTML = multiline(function(){/*
-      <div class="footer fade">
-        <div class="footerbar"></div>
-        Built from scratch, just as it should be.<br>
-        Randy Zhou 2019
-      </div>
-      */});
+  document.getElementById("footer").outerHTML =
+    `<div class="footer fade">
+      <div class="footerbar"></div>
+      Built from scratch, just as it should be.<br>
+      Randy Zhou 2019
+    </div>`;
 }
 
 
 
 function showProjects() {
     typeNormal("cd ~/projects","~/projects", (function(){
-        document.getElementById("content").innerHTML = multiline(function(){/*
-
-          <h1 class="title">Projects</h1>
+        document.getElementById("content").innerHTML =
+          `<h1 class="title">Projects</h1>
 
           <div class="project-tab project-thiswebsite" onclick="typeNormal('cat web/index.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/rzhou1999.github.io');}));">
             <h1 class="tab-title">This Website</h1>
@@ -61,16 +59,15 @@ function showProjects() {
           <div class="project-tab project-stockmarketproject" onclick="typeNormal('ls web/repapp','~/projects',(()=>{window.open('https://github.com/rzhou1999/repapp');}));">
             <h1 class="tab-title">College Rep Visit App Backend</h1>
             <p class="tab-desc-noimg">System for scheduling college rep visits to the Commonwealth School of Boston.<br><br>Created during my senior year of high school by the Commonwealth School's CS4 class. Written in JavaScript / Node.js with a PostgreSQL database.</p>
-          </div>
-    */});
+          </div>`;
     })
   );
 }
 
 function showAbout() {
   typeNormal("cd ~/about","~/about", (function(){
-    document.getElementById("content").innerHTML = multiline(function(){/*
-      <h1 class="title">About</h1>
+    document.getElementById("content").innerHTML = 
+      `<h1 class="title">About</h1>
 
       <p class="tab-desc-noimg">
         Hi there! I am a programmer studying at Cornell University. My primary interests involve lower level/systems-focused programming,
@@ -86,9 +83,7 @@ function showAbout() {
         For the 2019 summer, I am interning in software development at Pearson K-12 Learning.
         <br><br>
         When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing. I sing bass, and am currently a member of the Cornell Chorale.
-      </p>
-
-      */});
+      </p>`;
     })
   );
 }
@@ -96,8 +91,8 @@ function showAbout() {
 function showLinks() {
 
   typeNormal("cd ~/links","~/links", (function(){
-    document.getElementById("content").innerHTML = multiline(function(){/*
-      <h1 class="title">Links</h1>
+    document.getElementById("content").innerHTML =
+      `<h1 class="title">Links</h1>
 
       <div class="links">
         <div class="link" onclick="typeNormal('cat resume.pdf','~/links',(()=>{window.open('resume_web.pdf');}));">
@@ -114,8 +109,7 @@ function showLinks() {
         </div>
       </div>
 
-      <div id="email"></div>
-      */});
+      <div id="email"></div>`
     })
   );
 }
