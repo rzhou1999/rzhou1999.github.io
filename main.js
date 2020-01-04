@@ -20,7 +20,7 @@ function loadNav(){
     `<div class="footer fade">
       <div class="footerbar"></div>
       Built from scratch, just as it should be.<br>
-      Randy Zhou 2019
+      Randy Zhou 2020
     </div>`;
 }
 
@@ -33,7 +33,7 @@ function showProjects() {
 
           <div class="project-tab project-thiswebsite" onclick="typeNormal('cat web/index.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/rzhou1999.github.io');}));">
             <h1 class="tab-title">This Website</h1>
-            <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built 100% from scratch using HTML, CSS and (almost all) native JavaScript. Just as it should be.</p>
+            <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built 100% from scratch using HTML, CSS and native JavaScript. Just as it should be.</p>
           </div>
 
           <div class="project-tab project-malrecgraph" onclick="typeNormal('cat web/MALRecGraph.html','~/projects',(()=>{window.open('http://randyzhou.com/MALRecGraph/');}));">
@@ -70,17 +70,17 @@ function showAbout() {
       `<h1 class="title">About</h1>
 
       <p class="tab-desc-noimg">
-        Hi there! I am a programmer studying at Cornell University. My primary interests involve lower level/systems-focused programming,
-        but I often make forays into higher level programming and front-end development as well (this website is the result of one of them!).
-        Some of my favorite classes/topics so far have been CS 3410 Computer System Organization and Programming, CS 4410 Operating Systems, and CS 4420 Computer Architecture.
+        I am a computer scientiest studying at Cornell University. I am interested in computer architecture and systems.
         <br><br>
-        I graduated from Commonwealth High School of Boston in 2017. I am currently a second year university student majoring in CS and minoring in China and Asia Pacific Studies (assuming Cornell ever offers a gateway course ever again).
+        I graduated from Commonwealth High School of Boston in 2017. I am currently a third year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Electrical and Computer Engineering.
         <br><br>
         For the 2018-2019 school year, I was part of the Cornell Hyperloop project team as a member of the electrical software subteam. While I was on the team, I primarily worked with sensors for the pod's safety mechanisms (C), writing GUIs for sensor data (Python), and researching possible communications systems between our pod's microcontrollers and the base station.
         <br><br>
-        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting/rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
+        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
         <br><br>
-        For the 2019 summer, I am interning in software development at Pearson K-12 Learning.
+        For the 2019 summer, I interned in software development at Pearson K-12 Learning. I worked to help decide coding standards for new projects in the edtech platform Pearson Realize, and automated initial project scaffolding/integration of commonly used libraries/services according to those standards.
+        <br><br>
+        I wll be interning at Amazon for the 2020 summer.
         <br><br>
         When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing. I sing bass, and am currently a member of the Cornell Chorale.
       </p>`;
