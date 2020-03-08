@@ -131,6 +131,6 @@ function typeNormal(inp, newDir, cb){
 }
 
 function squelchface(){
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/SHvhps47Lmc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>'
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/hh6Dso8w5rk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>'
   typeNormal("yes that is my face ","~",(function(){return;}));
 }
