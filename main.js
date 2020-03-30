@@ -70,13 +70,13 @@ function showAbout() {
       `<h1 class="title">About</h1>
 
       <p class="tab-desc-noimg">
-        I am a computer scientiest studying at Cornell University. I am interested in computer architecture and systems.
+        I am a computer scientest studying at Cornell University interested in computer architecture and systems. I have been conducting research with the SAIL group at Cornell since Fall 2019, where I have primarily worked with applications of processing-in-memory in datacenter settings.
         <br><br>
         I graduated from Commonwealth High School of Boston in 2017. I am currently a third year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Electrical and Computer Engineering.
         <br><br>
         For the 2018-2019 school year, I was part of the Cornell Hyperloop project team as a member of the electrical software subteam. While I was on the team, I primarily worked with sensors for the pod's safety mechanisms (C), writing GUIs for sensor data (Python), and researching possible communications systems between our pod's microcontrollers and the base station.
         <br><br>
-        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA. 3410 > 3110, change my mind.
+        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA.
         <br><br>
         For the 2019 summer, I interned in software development at Pearson K-12 Learning. I worked to help decide coding standards for new projects in the edtech platform Pearson Realize, and automated initial project scaffolding/integration of commonly used libraries/services according to those standards.
         <br><br>
