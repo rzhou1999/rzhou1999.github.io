@@ -70,7 +70,7 @@ function showAbout() {
       `<h1 class="title">About</h1>
 
       <p class="tab-desc-noimg">
-        I am a computer scientest studying at Cornell University interested in computer architecture and systems. I have been conducting research with the SAIL group at Cornell since Fall 2019, where I have primarily worked with applications of processing-in-memory in datacenter settings.
+        I am a computer scientist studying at Cornell University interested in computer architecture and systems. I have been conducting research with the SAIL group at Cornell since Fall 2019, where I have primarily worked with applications of processing-in-memory in datacenter settings.
         <br><br>
         I graduated from Commonwealth High School of Boston in 2017. I am currently a third year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Electrical and Computer Engineering.
         <br><br>
