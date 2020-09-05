@@ -2,7 +2,7 @@ var typed = undefined;
 var prevDir = "guest@randyzhou:~$ ";
 
 function loadNav(){
-  document.getElementById("faceContent").outerHTML = 
+  document.getElementById("faceContent").outerHTML =
     `<div id="facewrapper"><img src="images/headshot.png" id="myface" onclick="squelchface();"></div>`;
 
   document.getElementById("masterContent").outerHTML =
@@ -66,24 +66,43 @@ function showProjects() {
 
 function showAbout() {
   typeNormal("cd ~/about","~/about", (function(){
-    document.getElementById("content").innerHTML = 
+    document.getElementById("content").innerHTML =
       `<h1 class="title">About</h1>
 
-      <p class="tab-desc-noimg">
-        I am a computer scientist studying at Cornell University interested in computer architecture and systems. I have been conducting research with the SAIL group at Cornell since Fall 2019, where I have primarily worked with applications of processing-in-memory in datacenter settings.
+        <p>I am a computer scientist studying at Cornell University interested in computer architecture and systems.
+        </p>
+
+        <h2 class="subtitle">Academic</h2>
+        <p>
+        I graduated from Commonwealth High School of Boston in 2017. I am currently a fourth year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Asian Studies. I plan to apply to graduate programs in the fields of computer architecture and distributed systems this Fall.
         <br><br>
-        I graduated from Commonwealth High School of Boston in 2017. I am currently a third year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Electrical and Computer Engineering.
+        I have been conducting research with Cornell's <a href="https://sail.ece.cornell.edu/">SAIL group</a> under Professor Christina Delimitrou since Fall 2019, where I have primarily worked with applications of processing-in-memory in datacenter settings.
+        <br>
+        </p>
+
+        <h2 class="subtitle">Teaching</h2>
+        <p>
+        From Spring 2019 to Spring 2020, I was part of the <a href="https://www.cs.cornell.edu/courses/cs3410/2019sp/">Cornell CS 3410 Computer System Organization and Programming</a> course staff as a teaching assistant, where I have been twice nominated by professors for student TA recognition. Throughout my time as a CS3410 TA, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course, and continue to manage autograder framework and deployment to this day.
         <br><br>
-        For the 2018-2019 school year, I was part of the Cornell Hyperloop project team as a member of the electrical software subteam. While I was on the team, I primarily worked with sensors for the pod's safety mechanisms (C), writing GUIs for sensor data (Python), and researching possible communications systems between our pod's microcontrollers and the base station.
+        As of Fall 2020, I have joined the <a href="https://www.cs.cornell.edu/courses/cs5414/2020fa/">CS 5414 Distributed Computing Principles</a> course staff.
+        <br>
+        </p>
+
+        <h2 class="subtitle">Industry</h2>
+        <p>
+        For the 2019 Summer, I interned in software development at Pearson K-12 Learning. I worked to help decide coding standards for new projects in the edtech platform Pearson Realize, and automated initial project scaffolding/integration of commonly used libraries/services according to those standards.
         <br><br>
-        In spring 2019, I also joined the Cornell CS 3410 Computer System Organization and Programming course staff as a teaching assistant. In my first semesting TAing for the course, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course (including P3 - Full RISCV and P6 - Malloc, for those of you familiar with the course), in addition to my regular duties as a TA.
+        I (virtually) interned at Amazon in the Summer of 2020 under the devices organization where I worked on privacy compliance. During my internship, I implemented a data transformation service for company-wide compliance with data privacy legislature.
+        <br>
+        </p>
+
+        <h2 class="subtitle">Other</h2>
+        <p>
+        When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing (which I started sophomore year of high school). I sing bass, and am currently a member of the Cornell Chorale (membership currently on hold as of Fall 2020 in light of the Coronavirus pandemic).
         <br><br>
-        For the 2019 summer, I interned in software development at Pearson K-12 Learning. I worked to help decide coding standards for new projects in the edtech platform Pearson Realize, and automated initial project scaffolding/integration of commonly used libraries/services according to those standards.
-        <br><br>
-        I wll be interning at Amazon for the 2020 summer.
-        <br><br>
-        When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing. I sing bass, and am currently a member of the Cornell Chorale.
-      </p>`;
+        In case the list of minors didn't clue you in already, I also spend a fair bit of time thinking about Asia and Asian-America. I have studied Mandarin to an advanced level (and thus hopefully mitigated at least to some extent my parents' dissapointment in me) over the past 5-6 years, and am still learning to this day.
+        </p>
+        `;
     })
   );
 }
@@ -131,6 +150,6 @@ function typeNormal(inp, newDir, cb){
 }
 
 function squelchface(){
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/hh6Dso8w5rk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>'
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/BQStjCPV2EU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
   typeNormal("yes that is my face ","~",(function(){return;}));
 }
