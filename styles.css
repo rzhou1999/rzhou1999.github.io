@@ -109,6 +109,10 @@ p{
   font-family: 'Roboto', sans-serif;
 }
 
+a{
+  color:#000;
+}
+
 .me {
   font-family: 'Aleo', serif;
     margin-top: 25px;
@@ -280,6 +284,11 @@ margin-block-end: .5em;
   font-family: 'Aleo', serif;
   text-align:center;
   margin-bottom:30px;
+}
+
+.subtitle {
+  font-family: 'Aleo', serif;
+  margin-bottom:16px;
 }
 
 .project-tab{
