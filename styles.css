@@ -302,6 +302,10 @@ margin-block-end: .5em;
     background-image:linear-gradient(to left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%), url("images/MALRecGraph.png");
 }
 
+.project-iro{
+  background-image:linear-gradient(to left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%), url("images/Iro.png");
+}
+
 .project-thiswebsite{
     background-image:linear-gradient(to left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%), url("images/me.png");
 }
