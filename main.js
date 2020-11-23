@@ -19,7 +19,7 @@ function loadNav(){
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Built from scratch, just as it should be.<br>
+      Last Updated 11/23/20<br>
       Randy Zhou 2020
     </div>`;
 }
@@ -65,14 +65,14 @@ function showAbout() {
     document.getElementById("content").innerHTML =
       `<h1 class="title">About</h1>
 
-        <p>I am a computer scientist studying at Cornell University. I am interested in the design and utilization of computer architecture and systems for datacenter efficiency and performance.
+        <p>I am a computer scientist studying at Cornell University interested in the design and utilization of computer architecture and systems for datacenter efficiency and performance. As economic and environmental reasons alike push datacenters towards innovative and creative solutions to maximize performance and efficiency, I believe that the solution to these issues lies in the two-pronged approach of custom-tailored development of datacenter-specific hardware, as well as the hardware-aware exploitation of these architectural resources through software.
         </p>
 
         <h2 class="subtitle">Academic</h2>
         <p>
         I graduated from Commonwealth High School of Boston in 2017. I am currently a fourth year university student majoring in CS and minoring in China and Asia Pacific Studies, Asian American Studies and Asian Studies. I plan to apply to graduate programs in the fields of computer architecture and distributed systems this Fall.
         <br><br>
-        I have been conducting research with Cornell's <a href="https://sail.ece.cornell.edu/">SAIL group</a> under Professor Christina Delimitrou since Fall 2019, where I have previously worked with applications of processing-in-memory in datacenter settings. I am currently investigating the effects of garbage collection on cloud microservice performance for use in a deployment debugging system based on unsupervised machine learning.
+        I have been conducting research with Cornell's <a href="https://sail.ece.cornell.edu/">SAIL group</a> under Professor Christina Delimitrou since Fall 2019, where I have previously worked with applications of processing-in-memory in datacenter settings. I am currently investigating the effects of garbage collection on cloud microservice performance for use in a deployment debugging system based on unsupervised machine learning. For more specific details, please view the corresponding section of my resume in the "Links" section.
         <br>
         </p>
 
