@@ -8,8 +8,8 @@ function loadNav(){
   document.getElementById("masterContent").outerHTML =
     `<hr class="bar fade">
     <div class="other fade">
-      <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
       <div class="el" id="about" onclick="showAbout()"><h3>About</h3></div>
+      <div class="el" id="projects" onclick="showProjects()"><h3>Projects</h3></div>
       <div class="el" id="links" onclick="showLinks()"><h3>Links</h3></div>
     </div>
     <hr class="bar fade">
@@ -19,7 +19,7 @@ function loadNav(){
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 11/23/20<br>
+      Last Updated 12/1/20<br>
       Randy Zhou 2020
     </div>`;
 }
@@ -30,6 +30,7 @@ function showProjects() {
     typeNormal("cd ~/projects","~/projects", (function(){
         document.getElementById("content").innerHTML =
           `<h1 class="title">Projects</h1>
+          <p>This tab lists some of the personal projects I have worked on, most of which were simply for fun (and thus are projects for which I can publicly post source code). For my research/academic/industry work, please see the "About" section, or my resume/CV (in the "Links" section).</p>
 
           <div class="project-tab project-thiswebsite" onclick="typeNormal('cat web/index.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/rzhou1999.github.io');}));">
             <h1 class="tab-title">This Website</h1>
@@ -97,6 +98,8 @@ function showAbout() {
         When I'm not in front of a computer screen (which, admittedly, isn't too often), I enjoy choral singing (which I started sophomore year of high school). I sing bass, and am currently a member of the Cornell Chorale (membership currently on hold as of Fall 2020 in light of the Coronavirus pandemic).
         <br><br>
         In case the list of minors didn't clue you in already, I also spend a fair bit of time thinking about Asia and Asian-America. I have studied Mandarin to an advanced level (and thus hopefully mitigated at least to some extent my parents' dissapointment in me) over the past 5-6 years, and am still learning to this day.
+        <br><br>
+        I began building a new computer in November 2020, and am documenting my attempts to brave the great GPU shortage of Fall 2020 <a onclick="showPc()">here</a>.
         </p>
         `;
     })
@@ -110,8 +113,12 @@ function showLinks() {
       `<h1 class="title">Links</h1>
 
       <div class="links">
-        <div class="link" onclick="typeNormal('cat resume.pdf','~/links',(()=>{window.open('resume_web.pdf');}));">
+        <div class="link" onclick="typeNormal('xdg-open resume.pdf','~/links',(()=>{window.open('resume_web.pdf');}));">
           <h3 class="link-title">Resume</h3>
+          <span class="mega-octicon octicon-file-pdf"></span>
+        </div>
+        <div class="link" onclick="typeNormal('xdg-open cv.pdf','~/links',(()=>{window.open('cv_web.pdf');}));">
+          <h3 class="link-title">Resume (CV)</h3>
           <span class="mega-octicon octicon-file-pdf"></span>
         </div>
         <div class="link" onclick="typeNormal('ls github','~/links',(()=>{window.open('https://github.com/rzhou1999/');}));">
@@ -125,6 +132,55 @@ function showLinks() {
       </div>
 
       <div id="email"></div>`
+    })
+  );
+}
+
+function showPc() {
+    typeNormal("cd ~/pc","~/pc", (function(){
+        window.scrollTo(0, 0);
+        document.getElementById("content").innerHTML =
+          `<h1 class="title">Personal Computer Build</h1>
+
+          <p>
+            I've long been interested in consumer-grade hardware and building computers-- perhaps that's why I got interested in computer architecture to begin with (and if you happen to be someone hiring/accepting candidates for designing hardware, please hit me up). Regardless, I first built a computer when I was 14 (for my brother)-- to put the time scale in perspective, this was a time when AMD's CPU line was largely considered inferior to Intel's (oh how the turn tables...), and a R9 290 was considered both "new" and "good." This year, I decided to build my second... which was honestly and objectively not too smart of an idea given the complete and utter shortage of GPUs in the latter half of 2020. Regardless, I document the process and my attempts at not completely breaking the bank below.
+          </p>
+
+          <hr>
+
+          <p>
+            <b>11/28/2020</b> Purchased Ryzen 3700x CPU and B550M motherboard to start, both from Microcenter. I chose the 3700x over budget CPUs such as the Ryzen 3600 for two reasons: 1. the 3600 hasn't been in stock for weeks basically anywhere and 2. I plan to use this rig for decent amounts of video editing for which the 3700x is better. Ultimately, choosing a Ryzen 7 CPU did cost quite a bit more, but based on <a href="https://www.pugetsystems.com/labs/articles/After-Effects-CPU-Roundup-AMD-Ryzen-3rd-Gen-AMD-Threadripper-2-Intel-9th-Gen-Intel-X-series-1533/">After Effects benchmarks from Puget Systems</a>, it seems that paying a little extra isn't all that bad of a choice. Getting a nicer processor also meant that I was more inclined to pick up a B550 motherboard (as opposed to a cheapo $60 B450...), which is probably going to help in the future when upgrading. Very well may have gone for a 5600x though... if I could find one at MSRP. Seems like the Zen 3 market is basically just as bad or worse than the 30XX market.
+          </p>
+          <center><img width=75% src="images/pc/11-28-2020.jpg"></center>
+          <p>
+          Total cost (before tax): $270 CPU + $110 motherboard - $20 bundle = $360
+          </p>
+
+          <hr>
+
+          <p>
+            <b>12/1/2020</b> Received SSD (ADATA XPG SX8200 Pro) and case (Lancool 205). A little pick-me-up present for Stanford's PhD deadline? In any case (heh), the build is definitely starting to take shape-- waiting on PSU and RAM next.
+            <br><br>
+            I won't claim to be an expert on case characteristics such as airflow or materials (or anything here, really), but Lian Li had a decent reputation and the 205 had pretty much everything I thought I would need in a budget case. For an SSD, since I don't plan on getting a secondary drive anytime soon, I was mainly just looking for an M2 TLC SSD that wasn't too expensive (I was perhaps most concerned about the endurance of using a QLC SSD as a boot drive, although with how good memory controllers are getting nowadays, maybe that concern was a little unwarranted). In any case, the SX8200 Pro checked all of those boxes, and was on sale to boot.</p>
+          </p>
+          <center>
+            <img width=45% src="images/pc/12-1-2020_1.jpg">
+            <img width=45% src="images/pc/12-1-2020_2.jpg">
+          </center>
+          <p>
+            Total cost (before tax): $56 case + $100 SSD = $156
+            <br><br>
+            And now time for the fun stuff (sort of).
+          </p>
+          <center>
+            <img width=30% src="images/pc/12-1-2020_3.jpg">
+            <img width=30% src="images/pc/12-1-2020_4.jpg">
+            <img width=30% src="images/pc/12-1-2020_5.jpg">
+          </center>
+          <p>
+            Moving the pre-installed rear fan to the front (I have fancy argb fans for the rear and top, and the front panel of the case is solid, so no point in rgb'ing the front).
+          </p>
+            `;
     })
   );
 }
