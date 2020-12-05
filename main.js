@@ -145,7 +145,7 @@ function showPc() {
           <p>
             I've long been interested in consumer-grade hardware and building computers-- perhaps that's why I got interested in computer architecture to begin with (and if you happen to be someone hiring/accepting candidates for designing hardware, please hit me up). Regardless, I first built a computer when I was 14 (for my brother)-- to put the time scale in perspective, this was a time when AMD's CPU line was largely considered inferior to Intel's (oh how the turn tables...), and a R9 290 was considered both "new" and "good." This year, I decided to build my second... which was honestly and objectively not too smart of an idea given the complete and utter shortage of GPUs in the latter half of 2020. Regardless, I document the process and my attempts at not completely breaking the bank below.
             <br><br>
-            Finalized pcpartpicker list <a href="https://pcpartpicker.com/list/Q3cprr">here</a>.
+            Finalized pcpartpicker list <a href="https://pcpartpicker.com/list/JZnfht">here</a>.
           </p>
 
           <hr>
