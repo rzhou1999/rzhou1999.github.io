@@ -19,7 +19,7 @@ function loadNav(){
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 12/1/20<br>
+      Last Updated 12/4/20<br>
       Randy Zhou 2020
     </div>`;
 }
@@ -144,6 +144,8 @@ function showPc() {
 
           <p>
             I've long been interested in consumer-grade hardware and building computers-- perhaps that's why I got interested in computer architecture to begin with (and if you happen to be someone hiring/accepting candidates for designing hardware, please hit me up). Regardless, I first built a computer when I was 14 (for my brother)-- to put the time scale in perspective, this was a time when AMD's CPU line was largely considered inferior to Intel's (oh how the turn tables...), and a R9 290 was considered both "new" and "good." This year, I decided to build my second... which was honestly and objectively not too smart of an idea given the complete and utter shortage of GPUs in the latter half of 2020. Regardless, I document the process and my attempts at not completely breaking the bank below.
+            <br><br>
+            Finalized pcpartpicker list <a href="https://pcpartpicker.com/list/Q3cprr">here</a>.
           </p>
 
           <hr>
@@ -180,7 +182,28 @@ function showPc() {
           <p>
             Moving the pre-installed rear fan to the front (I have fancy argb fans for the rear and top, and the front panel of the case is solid, so no point in rgb'ing the front).
           </p>
-            `;
+
+          <hr>
+
+          <p>
+            <b>12/4/2020</b> RAM (2x16gb 3200mhz CL16) and fans (3x argb 120mm) arrived today. Had some fun instaling the fans (I first put them on the wrong side of the fan tray, then facing the wrong direction, and then finally in the correct position and orientation) for exhaust on the back and top of the case.
+          </p>
+          <center>
+            <img width=30% src="images/pc/12-4-2020_1.jpg">
+            <img width=30% src="images/pc/12-4-2020_2.jpg">
+            <img width=30% src="images/pc/12-4-2020_3.jpg">
+          </center>
+          <p>
+            I mentioned above that I ended up getting a more expensive B550 motherboard (as opposed to a B450), and I figured that I might as well make use of the argb headers and get some argb fans. They were pretty expensive to be honest (non-addressable rgb fans were $15 for 3 last week), but as everyone knows, more colors means more performance.
+            <br><br>
+            Total cost (before tax): $94 RAM + $40 fans = $134
+            <br><br>
+            As a final note, it'll be a week or two before this arrives here, but I managed to buy a 3060 ti today!!! (and only 2 days after release, whew) With this, all of the parts have been ordered so I put the finalized parts list above (as a link to pcpartpicker). I'll continue to detail why I chose each part anyways though.
+          </p>
+          <center>
+            <img width=90% src="images/pc/12-4-2020_4.jpg">
+          </center>
+          `;
     })
   );
 }
@@ -202,6 +225,6 @@ function typeNormal(inp, newDir, cb){
 }
 
 function squelchface(){
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/aCiGnDy9qCo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/9xeZRQDKmLE?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
   typeNormal("yes that is my face ","~",(function(){return;}));
 }
