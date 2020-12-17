@@ -19,7 +19,7 @@ function loadNav(){
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 12/4/20<br>
+      Last Updated 12/17/20<br>
       Randy Zhou 2020
     </div>`;
 }
