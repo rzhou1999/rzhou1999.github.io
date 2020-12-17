@@ -203,6 +203,43 @@ function showPc() {
           <center>
             <img width=90% src="images/pc/12-4-2020_4.jpg">
           </center>
+
+          <hr>
+
+          <p>
+            <b>12/9/2020</b> And it's finished! All of the components have arrived, and I finished the build the day of. Build pictures below-- but first, unboxing pictures.
+          </p>
+          <center>
+            <img width=20% src="images/pc/12-9-2020_1.jpg">
+            <img width=20% src="images/pc/12-9-2020_2.jpg">
+            <img width=20% src="images/pc/12-9-2020_3.jpg">
+            <img width=20% src="images/pc/12-9-2020_4.jpg">
+          </center>
+          <p>Starting with the motherboard; SSD installation was mostly painless.</p>
+          <center>
+            <img width=45% src="images/pc/12-9-2020_5.jpg">
+            <img width=45% src="images/pc/12-9-2020_6.jpg">
+          </center>
+          <p>CPU, cooler and RAM come next-- installing the cooler feels terrifying every time I do it... Everything else was pretty straightforward though.</p>
+          <center>
+            <img width=30% src="images/pc/12-9-2020_7.jpg">
+            <img width=30% src="images/pc/12-9-2020_8.jpg">
+            <img width=30% src="images/pc/12-9-2020_9.jpg">
+          </center>
+          <p>GPU comes next (easily the hardest to get component).</p>
+          <center>
+            <img width=45% src="images/pc/12-9-2020_10.jpg">
+            <img width=45% src="images/pc/12-9-2020_11.jpg">
+          </center>
+          <p>And it's done! I actually screwed up a few times when installing the motherboard (I first used the wrong screws to attach the mobo to the case standoffs, and then I forgot to install some standoffs after redoing the screws a second time...), but luckily no DOA components at all. Installing Windows with the exact same USB stick I used six years ago:</p>
+          <center>
+            <img width=75% src="images/pc/12-9-2020_12.jpg">
+          </center>
+          <p>And obligatory RGB shots:</p>
+          <center>
+            <img width=45% src="images/pc/12-9-2020_13.jpg">
+            <img width=45% src="images/pc/12-9-2020_14.jpg">
+          </center>
           `;
     })
   );
