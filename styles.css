@@ -250,7 +250,7 @@ margin-block-end: .25em;
   padding-top:20px;
   padding-bottom:20px;
   display:flex;
-  width:40rem;
+  width:42rem;
   margin:auto;
 }
 
@@ -259,7 +259,7 @@ margin-block-end: .25em;
   margin:auto;
   border:2px solid black;
   font-family: 'Roboto', sans-serif;
-  width:10rem;
+  width:8.5rem;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -269,6 +269,11 @@ margin-block-end: .25em;
 
 
 .el:hover {
+  background-color: black;
+  color: white;
+}
+
+.selectedel {
   background-color: black;
   color: white;
 }
@@ -360,4 +365,8 @@ margin-block-end: .5em;
     font-family: 'Aleo', serif;
     margin:auto;
     padding-right:10px;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
 }
