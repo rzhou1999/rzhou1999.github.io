@@ -21,7 +21,7 @@ function loadNav() {
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 12/17/20<br>
+      Last Updated 12/22/20<br>
       Randy Zhou 2020
     </div>`;
 }
@@ -272,6 +272,7 @@ function showPc() {
           <li>First, the motherboard I used happens to have two M2 slots, one of which is currently unoccupied. I'd like to get a second NVMe drive (QLC/DRAMless will probably be fine) for file storage once I start filling my current one up.</li>
           <li>It also turns out that the RAM I bought was <a href="images/pc/12-22-2020_2.jpg">single rank</a>, which means that I'm technically losing out on a few percent compared to if I had went with dual rank memory. This motherboard <i>does</i> have four RAM slots, however, so I guess this gives me another reason to upgrade to 4x16gb RAM sticks in the future.</li>
           <li>Watercooling (some AIO, I don't think I'm ready for a custom loop yet) would also be nice to have. Have not experimented with overclocking the 3700x much, but it seems like a fun project.</li>
+          <li>Extension cables would make the bottom part of the build look a lot cleaner. Right now there is an extra daisy chain connector hanging off of each PCIe 6+2 pin cable connected to the GPU, which is a little ugly.
         </ul>
       </p>
       `;
