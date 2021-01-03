@@ -21,8 +21,8 @@ function loadNav() {
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 12/22/20<br>
-      Randy Zhou 2020
+      Last Updated 1/3/21<br>
+      Randy Zhou 2021
     </div>`;
 }
 
@@ -90,7 +90,7 @@ function showAbout() {
       <p>
       From Spring 2019 to Spring 2020, I was part of the <a href="https://www.cs.cornell.edu/courses/cs3410/2019sp/">Cornell CS 3410 Computer System Organization and Programming</a> course staff as a teaching assistant, where I have been twice nominated by professors for student TA recognition. Throughout my time as a CS3410 TA, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course, and continue to manage autograder framework and deployment to this day.
       <br><br>
-      As of Fall 2020, I have joined the course staff of <a href="https://www.cs.cornell.edu/courses/cs5414/2020fa/">CS 5414 Distributed Computing Principles</a>, a graduate-level distributed systems class, as a TA.
+      As of Fall 2020, I have joined the course staff of <a href="https://www.cs.cornell.edu/courses/cs5414/2020fa/">CS 5414 Distributed Computing Principles</a>, a graduate-level distributed systems class, as one of four undergraduate TAs. I will be returning to CS 3410 course staff in the Spring of 2021.
       <br>
       </p>
 
@@ -173,9 +173,6 @@ function showPc() {
         <b>11/28/2020</b> Purchased Ryzen 3700x CPU and B550M motherboard to start, both from Microcenter. I chose the 3700x over budget CPUs such as the Ryzen 3600 for two reasons: 1. the 3600 hasn't been in stock for weeks basically anywhere and 2. I plan to use this rig for decent amounts of video editing for which the 3700x is better. Ultimately, choosing a Ryzen 7 CPU did cost quite a bit more, but based on <a href="https://www.pugetsystems.com/labs/articles/After-Effects-CPU-Roundup-AMD-Ryzen-3rd-Gen-AMD-Threadripper-2-Intel-9th-Gen-Intel-X-series-1533/">After Effects benchmarks from Puget Systems</a>, it seems that paying a little extra isn't all that bad of a choice. Getting a nicer processor also meant that I was more inclined to pick up a B550 motherboard (as opposed to a cheapo $60 B450...), which is probably going to help in the future when upgrading. Very well may have gone for a 5600x though... if I could find one at MSRP. Seems like the Zen 3 market is basically just as bad or worse than the 30XX market.
       </p>
       <center><img width=75% src="images/pc/11-28-2020.jpg"></center>
-      <p>
-      Total cost (before tax): $270 CPU + $110 motherboard - $20 bundle = $360
-      </p>
 
       <hr id="12/1/2020">
 
@@ -187,8 +184,6 @@ function showPc() {
         <img width=45% src="images/pc/12-1-2020_2.jpg">
       </center>
       <p>
-        Total cost (before tax): $56 case + $100 SSD = $156
-        <br><br>
         And now time for the fun stuff (sort of).
       </p>
       <center>
@@ -212,8 +207,6 @@ function showPc() {
       </center>
       <p>
         I mentioned above that I ended up getting a more expensive B550 motherboard (as opposed to a B450), and I figured that I might as well make use of the argb headers and get some argb fans. They were pretty expensive to be honest (non-addressable rgb fans were $15 for 3 last week), but as everyone knows, more colors means more performance.
-        <br><br>
-        Total cost (before tax): $94 RAM + $40 fans = $134
         <br><br>
         As a final note, it'll be a week or two before this arrives here, but I managed to buy a 3060 ti today!!! (and only 2 days after release, whew) With this, all of the parts have been ordered so I put the finalized parts list above (as a link to pcpartpicker). I'll continue to detail why I chose each part anyways though.
       </p>
@@ -285,7 +278,7 @@ var state = false;
 function showEmail() {
   state = !state;
   if (state) {
-    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at gmail dot com</p>"; }));
+    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at protonmail dot com</p>"; }));
   }
   else {
     document.getElementById("email").innerHTML = "";
@@ -297,6 +290,6 @@ function typeNormal(inp, newDir, cb) {
 }
 
 function squelchface() {
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/TWg6KriEO9k?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/5CklZVlT7Hs?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
   typeNormal("yes that is my face ", "~", (function () { return; }));
 }
