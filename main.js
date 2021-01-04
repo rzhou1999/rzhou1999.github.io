@@ -21,12 +21,13 @@ function loadNav() {
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 1/3/21<br>
+      Last Updated 1/4/21<br>
       Randy Zhou 2021
     </div>`;
 }
 
 function changeSelectedEl(newSelectedElId) {
+  state = false;
   if (selectedElId != "")
     document.getElementById(selectedElId).classList.remove("selectedEl");
   document.getElementById(newSelectedElId).classList.add("selectedEl");
