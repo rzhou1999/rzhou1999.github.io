@@ -21,7 +21,7 @@ function loadNav() {
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 1/4/21<br>
+      Last Updated 2/4/21<br>
       Randy Zhou 2021
     </div>`;
 }
@@ -279,7 +279,7 @@ var state = false;
 function showEmail() {
   state = !state;
   if (state) {
-    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at protonmail dot com</p>"; }));
+    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at [tutanota || protonmail] dot com</p>"; }));
   }
   else {
     document.getElementById("email").innerHTML = "";
@@ -291,6 +291,6 @@ function typeNormal(inp, newDir, cb) {
 }
 
 function squelchface() {
-  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/5CklZVlT7Hs?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
+  document.getElementById("content").innerHTML = '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/PuMz4v5PYKc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>I usually put a song I like here.</p></center>'
   typeNormal("yes that is my face ", "~", (function () { return; }));
 }
