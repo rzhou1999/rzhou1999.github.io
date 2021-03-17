@@ -46,12 +46,12 @@ function showProjects() {
         <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built 100% from scratch using HTML, CSS and native JavaScript. Just as it should be.</p>
       </div>
 
-      <div class="project-tab project-iro" onclick="typeNormal('cat web/Iro.html','~/projects',(()=>{window.open('http://randyzhou.com/Iro/');}));">
+      <div class="project-tab project-iro" onclick="typeNormal('cat web/Iro.html','~/projects',(()=>{window.open('http://randy-zhou.me/Iro/');}));">
         <h1 class="tab-title">Iro</h1>
         <p class="tab-desc">An interactive chromatic movie visualizer.<br><br>Written for a Cornell class (ASIAN 2252) project using D3.js, Color Thief and copious amounts of duct tape.</p>
       </div>
 
-      <div class="project-tab project-malrecgraph" onclick="typeNormal('cat web/MALRecGraph.html','~/projects',(()=>{window.open('http://randyzhou.com/MALRecGraph/');}));">
+      <div class="project-tab project-malrecgraph" onclick="typeNormal('cat web/MALRecGraph.html','~/projects',(()=>{window.open('http://randy-zhou.me/MALRecGraph/');}));">
         <h1 class="tab-title">MALRecGraph</h1>
         <p class="tab-desc">Visualizer for MyAnimeList userrecs.<br><br>Front end written in JavaScript using vis.js for visualization. Back end written in Python with Flask, Connexion and BeautifulSoup.</p>
       </div>
@@ -279,7 +279,7 @@ var state = false;
 function showEmail() {
   state = !state;
   if (state) {
-    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at [tutanota || protonmail] dot com</p>"; }));
+    typeNormal('cat super-secret-email.txt', '~/links', (() => { document.getElementById("email").innerHTML = "<p class='title'>randyzhou1999 at protonmail dot com</p>"; }));
   }
   else {
     document.getElementById("email").innerHTML = "";
