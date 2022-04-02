@@ -21,7 +21,7 @@ function loadNav() {
   document.getElementById("footer").outerHTML =
     `<div class="footer fade">
       <div class="footerbar"></div>
-      Last Updated 2/4/21<br>
+      Last Updated 11/11/21<br>
       Randy Zhou 2021
     </div>`;
 }
@@ -39,11 +39,16 @@ function showProjects() {
   typeNormal("cd ~/projects", "~/projects", (function () {
     document.getElementById("content").innerHTML =
       `<h1 class="title">Projects</h1>
-      <p>This tab lists some of the personal projects I have worked on, most of which were simply for fun (and thus are projects for which I can publicly post source code). For my research/academic/industry work, please see the "About" section, or my resume/CV (in the "Links" section).</p>
+      <p>This tab lists some of the personal projects I have worked on, most of which were simply for fun (and thus are projects for which I can publicly post source code). For my research/academic/industry work, please see the "About" section, or my resume (in the "Links" section).</p>
 
       <div class="project-tab project-thiswebsite" onclick="typeNormal('cat web/index.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/rzhou1999.github.io');}));">
         <h1 class="tab-title">This Website</h1>
         <p class="tab-desc">The very website you're viewing right now.<br><br>Static webpage built 100% from scratch using HTML, CSS and native JavaScript. Just as it should be.</p>
+      </div>
+
+      <div class="project-tab project-woosticker" onclick="typeNormal('cat web/woosticker.html','~/projects',(()=>{window.open('https://github.com/rzhou1999/woosticker');}));">
+        <h1 class="tab-title">Woosticker</h1>
+        <p class="tab-desc">An open source Android app for custom sticker keyboards. Does your fancy new messaging app not have native sticker support? woosticker is your answer.<br><br>Over 1000 downloads and counting.</p>
       </div>
 
       <div class="project-tab project-iro" onclick="typeNormal('cat web/Iro.html','~/projects',(()=>{window.open('http://rzhou1999.github.io/Iro/');}));">
@@ -76,22 +81,22 @@ function showAbout() {
     document.getElementById("content").innerHTML =
       `<h1 class="title">About</h1>
 
-      <p>I am a computer scientist studying at Cornell University interested in the design and utilization of computer architecture and systems for datacenter efficiency and performance. As economic and environmental reasons alike push datacenters towards innovative and creative solutions to maximize performance and efficiency, I believe that the solution to these issues lies in the two-pronged approach of custom-tailored development of datacenter-specific hardware, as well as the hardware-aware exploitation of these architectural resources through software.
+      <p>Hello. I am Randy.
       </p>
 
       <h2 class="subtitle">Academic</h2>
       <p>
-      I graduated from Commonwealth High School of Boston in 2017. I am currently a fourth year university student majoring in CS and minoring in China and Asia Pacific Studies (CAPS) and East Asian Studies. I am applying to graduate programs in the general fields of computer architecture and distributed systems this Fall.
+      I graduated from Commonwealth High School of Boston in 2017. I graduated Magna Cum Laude from Cornell University in 2021, majoring in CS and minoring in China and Asia Pacific Studies and Asian Studies.
       <br><br>
-      I have been conducting research with Cornell's <a href="https://sail.ece.cornell.edu/">SAIL group</a> under Professor Christina Delimitrou since Fall 2019, where I have previously worked with applications of processing-in-memory in datacenter settings. I am currently investigating the effects of garbage collection on cloud microservice performance for use in a deployment debugging system based on unsupervised machine learning. For more specific details, please view the corresponding section of my resume in the "Links" section.
+      I conducted research with Cornell's <a href="https://sail.ece.cornell.edu/">SAIL group</a> under Professor Christina Delimitrou from 2019 to 2021, where I have previously worked with applications of processing-in-memory in datacenter settings, and profiled various microservice-based applications to study the effects of system task interference, such as those from garbage collection.
       <br>
       </p>
 
       <h2 class="subtitle">Teaching</h2>
       <p>
-      From Spring 2019 to Spring 2020, I was part of the <a href="https://www.cs.cornell.edu/courses/cs3410/2019sp/">Cornell CS 3410 Computer System Organization and Programming</a> course staff as a teaching assistant, where I have been twice nominated by professors for student TA recognition. Throughout my time as a CS3410 TA, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course, and continue to manage autograder framework and deployment to this day.
+      From Spring 2019 to Spring 2021, I was part of the <a href="https://www.cs.cornell.edu/courses/cs3410/2019sp/">Cornell CS 3410 Computer System Organization and Programming</a> course staff as a teaching assistant, where I have been twice nominated by professors for student TA recognition. Throughout my time as a CS3410 TA, I played a crucial part in the CS3410 ISA change from MIPS to RISCV by porting and rewriting major grading scripts for some of the largest/most complex projects in the course, and continue to manage autograder framework and deployment to this day.
       <br><br>
-      As of Fall 2020, I have joined the course staff of <a href="https://www.cs.cornell.edu/courses/cs5414/2020fa/">CS 5414 Distributed Computing Principles</a>, a graduate-level distributed systems class, as one of four undergraduate TAs. I will be returning to CS 3410 course staff in the Spring of 2021.
+      In Fall 2020, I joined the course staff of <a href="https://www.cs.cornell.edu/courses/cs5414/2020fa/">CS 5414 Distributed Computing Principles</a>, a graduate-level distributed systems class, as a TA.
       <br>
       </p>
 
@@ -99,7 +104,7 @@ function showAbout() {
       <p>
       For the 2019 Summer, I interned in software development at Pearson K-12 Learning. I worked to help decide coding standards for new projects in the edtech platform Pearson Realize, and automated initial project scaffolding/integration of commonly used libraries/services according to those standards.
       <br><br>
-      I (virtually) interned at Amazon in the Summer of 2020 under the devices organization where I worked on privacy compliance. During my internship, I implemented a data transformation service for company-wide compliance with data privacy legislature.
+      I (virtually) interned at Amazon in the Summer of 2020 under the devices organization where I worked on privacy compliance. During my internship, I implemented a data transformation service for company-wide compliance with data privacy legislature. In the summer of 2021, I returned as an intern to Amazon, where I architected and implemented a "Session Journey Mapper" for easy and intuitive exploration of customer behavior within Kindle reading sessions.
       <br>
       </p>
 
@@ -123,10 +128,6 @@ function showLinks() {
       <div class="links">
         <div class="link" onclick="typeNormal('xdg-open resume.pdf','~/links',(()=>{window.open('resume_web.pdf');}));">
           <h3 class="link-title">Resume</h3>
-          <span class="mega-octicon octicon-file-pdf"></span>
-        </div>
-        <div class="link" onclick="typeNormal('xdg-open cv.pdf','~/links',(()=>{window.open('cv_web.pdf');}));">
-          <h3 class="link-title">Resume (CV)</h3>
           <span class="mega-octicon octicon-file-pdf"></span>
         </div>
         <div class="link" onclick="typeNormal('ls github','~/links',(()=>{window.open('https://github.com/rzhou1999/');}));">
@@ -153,7 +154,7 @@ function showPc() {
         <img width=75% src="images/pc/12-22-2020_1.jpg">
       </center>
       <p>
-        I've long been interested in consumer-grade hardware and building computers-- perhaps that's why I got interested in computer architecture to begin with (and if you happen to be someone hiring/accepting candidates for designing hardware, please hit me up). Regardless, I first built a computer when I was 14 (for my brother)-- to put the time scale in perspective, this was a time when AMD's CPU line was largely considered inferior to Intel's (oh how the turn tables...), and a R9 290 was considered both "new" and "good." This year, I decided to build my second... which was honestly and objectively not too smart of an idea given the complete and utter shortage of GPUs in the latter half of 2020. Regardless, I document the process and my attempts at not completely breaking the bank below.
+        I've long been interested in consumer-grade hardware and building computers-- perhaps that's why I got interested in computer science to begin with. Regardless, I first built a computer when I was 14 (for my brother)-- to put the time scale in perspective, this was a time when AMD's CPU line was largely considered inferior to Intel's (oh how the turn tables...), and a R9 290 was considered both "new" and "good." This year, I decided to build my second... which was honestly and objectively not too smart of an idea given the complete and utter shortage of GPUs in the latter half of 2020. Regardless, I document the process and my attempts at not completely breaking the bank below.
         <br><br>
         Finalized PCPartPicker list (with component reviews) <a href="https://pcpartpicker.com/b/MnFG3C">here</a>.
       </p>
